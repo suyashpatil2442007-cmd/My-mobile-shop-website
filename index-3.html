@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="MY MOBILE - Best Price Mobile Shop in Nanded. Multi-brand smartphones and mobile accessories. Visit us at Mahatma Phule Market, Nanded.">
+  <title>MY MOBILE | Best Price Mobile Shop in Nanded</title>
+  <style>
+    :root{--bg:#08090b;--panel:#111317;--panel2:#17191e;--gold:#d9b66d;--gold2:#f1d99b;--text:#f5f5f3;--muted:#a6a7ad;--line:#292b31}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(8,9,11,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-weight:900;letter-spacing:.12em;font-size:1.12rem}.brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:24px;color:#d3d3d5;font-size:.92rem}
+    .navlinks a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17130a;font-weight:800;border:1px solid transparent;transition:transform .2s,filter .2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+    .btn.secondary{background:transparent;color:var(--text);border-color:#55504a}
+    .hero{padding:76px 0 64px;overflow:hidden;position:relative}
+    .hero:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;right:-150px;top:-130px;background:radial-gradient(circle,rgba(217,182,109,.16),transparent 68%);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold2);font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .dot{width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 15px var(--gold)}
+    h1{font-size:clamp(2.7rem,6vw,5.2rem);line-height:1.03;letter-spacing:-.055em;margin:18px 0}
+    h1 em{font-style:normal;color:var(--gold2)}
+    .lead{max-width:570px;color:#b7b8bd;font-size:1.08rem;margin:0 0 26px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .rating{display:flex;align-items:center;gap:10px;margin-top:28px;color:#c9c9cc;font-size:.95rem}
+    .stars{color:var(--gold2);letter-spacing:2px}
+    .hero-art{min-height:390px;position:relative;display:grid;place-items:center}
+    .halo{position:absolute;width:min(390px,95%);aspect-ratio:1;border-radius:50%;border:1px solid rgba(217,182,109,.28);background:radial-gradient(circle,rgba(217,182,109,.1),rgba(17,19,23,.1) 58%,transparent 70%)}
+    .phone{position:relative;width:180px;height:350px;border:3px solid #66666a;border-radius:34px;background:linear-gradient(145deg,#292b30,#08090b 58%,#24262a);box-shadow:24px 32px 70px #000,0 0 0 8px #16181c;transform:rotate(-7deg);padding:10px}
+    .phone:before{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:64px;height:15px;border-radius:12px;background:#050506;z-index:2}
+    .screen{height:100%;border-radius:23px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 45% 30%,#5c4b2d 0,#28251e 28%,#111216 62%,#050506 100%)}
+    .screen:before,.screen:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(241,217,155,.65);width:230px;height:230px;left:-36px;top:58px;transform:rotate(28deg)}
+    .screen:after{width:150px;height:290px;left:5px;top:26px;transform:rotate(-30deg);border-color:rgba(241,217,155,.28)}
+    .camera{position:absolute;top:18px;left:18px;display:grid;gap:7px;z-index:1}
+    .lens{width:31px;height:31px;border-radius:50%;border:3px solid #777;background:radial-gradient(circle,#0b1a2a 0 25%,#263a4b 28%,#050608 62%);box-shadow:0 0 0 2px #202226}
+    .float-card{position:absolute;padding:14px 17px;border:1px solid #39332a;background:rgba(17,19,23,.92);border-radius:16px;box-shadow:0 15px 40px #0008}
+    .float-card strong{display:block;color:var(--gold2);font-size:1.08rem}
+    .float-card small{color:var(--muted)}
+    .fc1{left:0;top:65px}.fc2{right:0;bottom:58px}
+    section{padding:68px 0}
+    .section-head{max-width:650px;margin-bottom:28px}
+    .kicker{color:var(--gold);font-size:.78rem;letter-spacing:.17em;text-transform:uppercase;font-weight:800}
+    h2{font-size:clamp(1.9rem,4vw,3rem);line-height:1.12;letter-spacing:-.035em;margin:9px 0 12px}
+    .sub{color:var(--muted);margin:0}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:linear-gradient(145deg,#15171b,#0e0f12);border:1px solid var(--line);border-radius:20px;padding:24px}
+    .icon{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:#2b2519;color:var(--gold2);font-size:1.35rem;margin-bottom:17px}
+    .feature h3{margin:0 0 7px;font-size:1.12rem}.feature p{color:var(--muted);margin:0;font-size:.95rem}
+    .visit{background:linear-gradient(135deg,#121316,#0a0b0d);border-block:1px solid var(--line)}
+    .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+    .details,.map-card{border:1px solid var(--line);background:#101114;border-radius:22px;padding:26px}
+    .detail{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+    .detail:last-child{border-bottom:0}.detail .symbol{color:var(--gold2);font-size:1.2rem;width:26px;flex-shrink:0}
+    .detail b{display:block;margin-bottom:3px}.detail span{color:var(--muted);font-size:.94rem}
+    .map-card{display:flex;flex-direction:column;justify-content:space-between;min-height:320px;overflow:hidden;position:relative;background:radial-gradient(circle at 80% 10%,rgba(217,182,109,.12),transparent 35%),#101114}
+    .map-pattern{position:absolute;inset:0;opacity:.24;background-image:linear-gradient(30deg,transparent 47%,#5a5549 48%,#5a5549 49%,transparent 50%),linear-gradient(120deg,transparent 47%,#5a5549 48%,#5a5549 49%,transparent 50%);background-size:72px 72px;mask-image:linear-gradient(to bottom,#000,transparent)}
+    .pin{position:relative;display:grid;place-items:center;margin:auto;width:68px;height:68px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--gold);color:#17130a;font-size:1.7rem;box-shadow:0 10px 35px #0008}
+    .pin span{transform:rotate(45deg)}
+    .map-copy{position:relative}.map-copy h3{margin:0 0 5px}.map-copy p{color:var(--muted);margin:0 0 16px}
+    .cta{border:1px solid #4a4030;background:linear-gradient(115deg,#1b1914,#101114);border-radius:24px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .cta h2{margin-top:0}.cta p{color:var(--muted);margin:0}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+    .foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .mobile-cta{display:none}
+    @media(max-width:780px){.navlinks{display:none}.hero{padding:55px 0 45px}.hero-grid{grid-template-columns:1fr;gap:12px}.hero-art{min-height:330px}.phone{transform:rotate(-6deg) scale(.88)}.fc1{left:2%;top:34px}.fc2{right:1%;bottom:30px}.features{grid-template-columns:1fr}.visit-grid{grid-template-columns:1fr}section{padding:52px 0}.cta{align-items:flex-start;flex-direction:column}.mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:6;padding:10px 4%;gap:10px;background:rgba(8,9,11,.95);border-top:1px solid var(--line);backdrop-filter:blur(12px)}.mobile-cta .btn{flex:1;padding:11px 10px}footer{padding-bottom:90px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="MY MOBILE home">MY <span>MOBILE</span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#services">What we offer</a><a href="#visit">Find us</a>
+    </nav>
+    <a class="btn" href="tel:+919307342355">☎ Call the shop</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Your local mobile store · Nanded</div>
+        <h1>Find your next<br><em>mobile.</em></h1>
+        <p class="lead">Welcome to MY MOBILE — a multi-brand mobile shop offering smartphones and mobile accessories at competitive prices. Visit us in Nanded to explore your options.</p>
+        <div class="actions">
+          <a class="btn" href="tel:+919307342355">☎ Call 093073 42355</a>
+          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Shop%20No%20BF-7%20Mahatma%20Phule%20Market%20opposite%20Kisan%20Mall%20Vishnu%20Nagar%20Nanded%20431602" target="_blank" rel="noopener">⌖ Get directions</a>
+        </div>
+        <div class="rating"><span class="stars" aria-label="5 stars">★★★★★</span><strong>5.0</strong><span>· 603 Google reviews shown on the shop listing</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative smartphone illustration">
+        <div class="halo"></div>
+        <div class="phone"><div class="screen"><div class="camera"><i class="lens"></i><i class="lens"></i><i class="lens"></i></div></div></div>
+        <div class="float-card fc1"><strong>Smartphones</strong><small>Explore multi-brand options</small></div>
+        <div class="float-card fc2"><strong>Accessories</strong><small>Everyday mobile essentials</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Welcome to MY MOBILE</div><h2>Good choices start with a visit.</h2><p class="sub">Looking for a smartphone or mobile accessories? Stop by our Nanded store to ask about available models and current prices.</p></div>
+      <div class="features" id="services">
+        <article class="feature"><div class="icon">▣</div><h3>Multi-brand smartphones</h3><p>Visit the shop to ask about brands, models, and availability.</p></article>
+        <article class="feature"><div class="icon">✧</div><h3>Mobile accessories</h3><p>Ask in-store about accessories available for your device.</p></article>
+        <article class="feature"><div class="icon">₹</div><h3>Ask about prices</h3><p>Call the shop directly for current pricing and product details.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Visit our store</div><h2>Find MY MOBILE in Nanded.</h2><p class="sub">Use the address below to plan your visit or call us before coming.</p></div>
+      <div class="visit-grid">
+        <div class="details">
+          <div class="detail"><div class="symbol">⌖</div><div><b>Shop address</b><span>Shop No. BF-7, Mahatma Phule Market, opposite Kisan Mall, Industrial Estate, ITI, Vishnu Nagar, Nanded, Maharashtra 431602</span></div></div>
+          <div class="detail"><div class="symbol">☎</div><div><b>Phone</b><span><a href="tel:+919307342355">093073 42355</a></span></div></div>
+          <div class="detail"><div class="symbol">★</div><div><b>Google listing rating</b><span>5.0 out of 5 · 603 reviews, as shown in the supplied screenshot. Ratings can change.</span></div></div>
+          <div class="detail"><div class="symbol">◷</div><div><b>Opening hours</b><span>Please call the shop to confirm today's hours.</span></div></div>
+        </div>
+        <div class="map-card">
+          <div class="map-pattern"></div><div class="pin" aria-hidden="true"><span>⌖</span></div>
+          <div class="map-copy"><h3>Come by and say hello.</h3><p>Opposite Kisan Mall · Vishnu Nagar · Nanded</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Shop%20No%20BF-7%20Mahatma%20Phule%20Market%20opposite%20Kisan%20Mall%20Vishnu%20Nagar%20Nanded%20431602" target="_blank" rel="noopener">Open in Google Maps ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta"><div><div class="kicker">Need product details?</div><h2>Let's talk mobiles.</h2><p>Call MY MOBILE to ask about current availability and prices.</p></div><a class="btn" href="tel:+919307342355">Call the shop ↗</a></div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#home">MY <span>MOBILE</span></a><span>© <span id="year"></span> MY MOBILE · Nanded, Maharashtra</span><span>Product availability and prices should be confirmed with the shop.</span></div></footer>
+<div class="mobile-cta"><a class="btn" href="tel:+919307342355">☎ Call</a><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Shop%20No%20BF-7%20Mahatma%20Phule%20Market%20opposite%20Kisan%20Mall%20Vishnu%20Nagar%20Nanded%20431602" target="_blank" rel="noopener">⌖ Directions</a></div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
